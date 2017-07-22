@@ -1,0 +1,163 @@
+<!DOCTYPE html >
+<html lang="pt-br">
+    <head>
+        <title>Bruno de Moraes - Full Stack Developer</title>
+
+        <meta charset="utf-8"/>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Fontawesome -->
+        <script src="https://use.fontawesome.com/c9a113e473.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <nav id="menu">
+                <div id="foto-perfil">
+                    <span><img src="" alt=""/></span>
+                </div>
+
+                <section id="menu-secoes">
+                    <div id="redes-sociais">
+                        <!-- LinkedIn -->
+                        <span id="linkedin">
+                            <a href="https://www.linkedin.com/in/bruno-russo-67697026/" target="_blank">
+                                <i class="fa fa-linkedin-square fa-2" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <!-- GitHub colocar link -->
+                        <span id="github">
+                            <a href="https://www.linkedin.com/in/bruno-russo-67697026/" target="_blank">
+                                <i class="fa fa-github fa-2" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <!-- SoundCloud colocar link -->
+                        <span id="soundcloud">
+                            <a href="https://www.linkedin.com/in/bruno-russo-67697026/" target="_blank">
+                                <i class="fa fa-soundcloud fa-2" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <!-- Flickr colocar link -->
+                        <span id="flickr">
+                            <a href="https://www.linkedin.com/in/bruno-russo-67697026/" target="_blank">
+                                <i class="fa fa-flickr fa-2" aria-hidden="true"></i>
+                            </a>
+                        </span>
+
+                        <!-- Vimeo colocar link -->
+                        <span id="flickr">
+                            <a href="https://www.linkedin.com/in/bruno-russo-67697026/" target="_blank">
+                                <i class="fa fa-vimeo-square fa-2" aria-hidden="true"></i>
+                            </a>
+                        </span>
+
+                    </div>
+
+                    <div id="menu-principal">
+                        <span class="btn-menu">_</span>
+                        <span class="btn-menu">_</span>
+                        <span class="btn-menu">_</span>
+                        <section id="menu-detalhes">
+                            <ul id="lista-menu">
+                                <li><a href="#sobre-bruno">Sobre Bruno</a></li>
+                                <li><a href="#objetivos-profissionais">Objetivos Profissionais</a></li>
+                                <li><a href="#experiencia-profissional">Experiência Profissional</a></li>
+                                <li><a href="#trabalhos-voluntarios">Trabalhos Voluntários</a></li>
+                                <li><a href="#experiencias-de-vida">Experiência de Vida</a></li>
+                                <li><a hre="#contatos">Contatos</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+            </nav>
+
+            <article>
+
+                <section id="sobre-bruno">
+                    <span class="img-esquerda"><img src="" alt="Esse é Bruno ;)"/></span>
+                    <h1><span class="p-topo">Sobre</span><span class="p-abaixo">Bruno</span></h1>
+                    <div>
+                        <p></p>
+                    </div>
+                </section>
+
+                <section id="objetivos-profissionais">
+                    <span class="img-direita"><img src="" alt="Objetivo profissional"/></span>
+                    <h2><span class="p-topo">Objetivos</span><span class="p-abaixo">Profissionais</span></h2>
+                    <div>
+                        <p></p>
+                    </div>
+                </section>
+
+                <section id="experiencia-profissional">
+                    <span class="img-esquerda"><img src="" alt="Esse é Bruno ;)"/></span>
+                    <h2><span class="p-topo"></span><span class="p-abaixo"></span></h2>
+                    <div>
+                        <p></p>
+                    </div>
+                </section>
+
+                <section id="trabalhos-voluntarios">
+                    <span class="img-direita"><img src="" alt="Trabalhos voluntários"/></span>
+                    <h2><span class="p-topo"></span><span class="p-abaixo"></span></h2>
+                    <div>
+                        <p></p>
+                    </div>
+                </section>
+
+                <section id="experiencias-de-vida">
+                    <span class="img-esquerda"><img src="" alt="Experiências de vida"/></span>
+                    <h2><span class="p-topo"></span><span class="p-abaixo"></span></h2>
+                    <div>
+                        <p></p>
+                    </div>
+                    <div id="galeria-de-fotos">
+                        <span><img src="" alt=""/></span>
+                    </div>
+                </section>
+
+            </article>
+
+            <footer>
+
+                <article id="contatos">
+                    <section id="contato-mobile">
+                        <h3>Contatos</h3>
+                        <p>Cel.:<span>+55 11 989.550.337</span></p>
+                    </section>
+
+                    <section id="mande-um-email">
+                        <h3>Me mande um email ;)</h3>
+                        <div>
+                            <form method="post" action="">
+                                <input type="email" id="email" class="" name="email" placeholder="Digite seu email" value="<%= %>" required/>
+                                <input type="text" id="nome" class="" name="nome" placeholder="Seu nome please!" value="<%= %>" required/>
+                                <input type="text" id="mensagem" class="" name="mensagem" placeholder="Escreva o que quer falar comigo ;)" />
+                                <input type="button" id="btn-enviar" class="" name="btn-enviar" value="Enviar p/ Bruno :)" />
+                             </form>
+                        </div>
+                    </section>
+                </article>
+
+                <section id="chat">
+                    <div id="caixa-chat">
+                        <h3>Fale com o Bruno quando ele estiver online!</h3>
+                        <p>Bruno está <span id="status-offline"><%= data.status_bruno %></span></p>
+                        <% if(data.status_bruno == "online"){ %>
+                            <h4>Bruno está <span id="status-online">Online</span></h4>
+                            <form >
+                                <input type="text" id="nome_chat" name="nome_chat" 
+                            </form>
+                        <% } %>
+                    </div>
+                </section>
+
+            </footer>
+        </div><!-- Fim do container -->
+    </body>
+</html>
